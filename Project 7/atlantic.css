@@ -1,0 +1,359 @@
+/*stylesheet*/
+
+.contact {
+	font-size: 50%;
+}
+
+.resort {
+	color: #5C7FA3;
+	font-weight: bold;
+}
+
+#accommodations-image {
+    height: 300px;
+    background-image: url(images/bungalow-main.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#activities-image {
+    height: 300px;
+    background-image: url(images/trail-main.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+/*adjusting columns for last table in activities*/
+#wider-column {
+    width: 7em;
+}
+
+#narrower-column {
+    width: 18em;
+}
+
+#main-image {
+    height: 300px;
+    background-image: url(images/coast-main.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#reservations-inputs {
+    	list-style: none;
+    	list-style-image: none;
+}
+
+/*wouldn't validate with the following*/
+/*#phone-number {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}*/
+
+#wrapper {
+    width: 80%;
+    min-width: 960px;
+    max-width: 2048px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #90C7E3;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+	background-repeat: no-repeat;
+	color: #666666;
+	font-family: Arial,Helvetica,sans-serif;
+    height: 100%
+
+}
+
+dt {
+	color: #000099;
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: bold;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 75%;
+	font-style: italic;
+	text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+
+    /*added the following to get the nav to span all the way to the bottom of the body*/
+    margin-left: 190px;
+}
+
+h1 , h2, h3{
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+	color: #3399CC;
+    text-shadow: 1px 1px 1px #CCCCCC; 
+}
+
+h3 {
+	color: #000099;
+}
+
+header {
+	background-color: #000033;
+	background-image: url(images/sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+    padding-top: 15px;
+    text-align: center;
+    height: 60px;
+}
+
+/*added the following to get rid of the gap between the header and nav */
+header > h1 {
+	margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*added the following to have the gradient span across the entire vertical space*/
+html{
+    height:100%;
+}
+
+/*input[type=text], textarea, input[type=email] {
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus, input[type=email]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}*/
+
+input, textarea {
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+label {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 50px;
+}
+
+main {
+    padding: 1px 20px 20px 30px;
+    background-color: #FFFFFF;
+    margin-left: 190px;
+}
+
+main ul {
+    list-style-image: url(images/marker.gif);
+}
+
+nav {
+    padding: 20px;
+	font-weight: bold;
+    float: left;
+    width: 160px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 1.2em;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table, th, td {
+    border-width: 2px;
+    border-color: #81B3CC;
+    border-style: solid;
+}
+
+th {
+    background-color: #000099;
+    color: #FFFFFF;
+    height: 3em;
+}
+
+th:first-child {
+    width: 4em;
+}
+
+th:last-child {
+    width: 5em;
+}
+
+th, td {
+    text-align: center;
+    padding: .4em;
+    /*margin: 0 auto;*/
+}
+
+td:nth-child(2) {
+    /*following was for testing*/
+    /*background-color: pink;*/
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #E5E5E5;
+}
+
+td a:link{
+    color: #1919A3; 
+}
+
+td a:hover {
+    color: #000033;
+}
+
+a:link {
+    color: #000033;
+}
+
+a:visited {
+    color: #344873;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+/*37.5em - 64em tablet*/
+@media (max-width: 64em) {
+    body {
+        margin: 0;
+        background-color: #FFFFFF
+    }
+    #wrapper {
+        min-width: 0;
+        /*max-width: auto;*/
+        width: auto;
+        box-shadow: none;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+    nav li {
+        display: inline;
+        padding: 0.25em 0.75em;
+    }
+    #accommodations-image {
+        margin-left: 0;
+        height: 200px;
+    }
+    #activities-image {
+        margin-left: 0;
+        height: 200px;
+    }
+    #main-image {
+        margin-left: 0;
+        height: 200px;
+    }
+    footer {
+        /*min-width: auto;
+        max-width: auto;
+        width: auto;*/
+        margin: auto;
+    }
+}
+
+/*less than 37.5em mobile*/
+@media only screen and (max-width: 37.5em) {
+    header {
+        padding-top: 1em;
+    }
+    label {
+    	text-align: left;
+    }
+    main {
+        padding: 0.1em 1em;
+        font-size: 90%; 
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000; 
+        /*testing*/
+        /*min-width: auto;
+        max-width: auto;*/
+        /*width: 100%;*/
+    }
+    nav li a {
+        display: block;
+    }
+    #accommodations-image {
+        background-image: none;
+        height: 0;
+    }
+    #activities-image {
+        background-image: none;
+        height: 0;
+    }
+    #main-image {
+        background-image: none;
+        height: 0;
+    }
+	/*following wouldn't validate*/
+    /*#phone-number {
+        pointer-events: auto;
+        cursor: default;
+    }*/
+    /*wouldn't validate with the following*/
+	/*#phone-number:hover {
+        color: #1919A3;
+        text-decoration: underline;
+    }*/
+    table {
+        display: none;
+    }
+    footer {
+        /*min-width: auto;
+        max-width: auto;
+        width: auto;*/
+        margin: auto;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Atlantic Trails Resort</title>
+	<link rel="stylesheet" href="atlantic.css" type="text/css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script src="myscripts.js"></script>
+	
+	<!--<style>
+		header > h1 {margin-bottom: 0px};
+	</style>-->
+</head>
+<body onload="init()">
+	<div id="wrapper">
+		<header role="banner">
+			<h1 role="heading">Atlantic Trails Resort</h1>		
+		</header>	
+		<nav role="navigation">
+			<ul>
+                <li><a href=index.html>Home</a></li>
+    			<li><a href=accommodations.html>Accommodations</a></li>
+    			<li><a href=activities.html>Activities</a></li>
+    			<li><a href=#>Reservations</a></li>
+            </ul>
+		</nav>
+		<!-- <div id="main-image"></div> -->
+		<main> 
+			<article role="main">
+				<h2 role="heading">Reservations at Atlantic Trails</h2>
+				<h3>Call Us Today!</h3>
+				<form method="post" action="http://cs.ucf.edu/~markl/atlanticformreport.php">
+					<fieldset style="background-color: #D3D3D3;">
+						<ul id="reservations-inputs">
+							<li>
+								<label>*First Name:</label>
+								<input type="text" id="first_name" name="first_name" required="required" autofocus="autofocus" />
+							</li>
+							<li>
+								<label>*Last Name:</label>
+								<input type="text" id="last_name" name="last_name" required="required" />
+							</li>
+							<li>
+								<label>*E-mail:</label>
+								<input type="email" id="email" name="email" required="required" />
+							</li>
+							<li>
+								<label>Phone:</label>
+								<input type="tel" id="phone" name="phone" />
+							</li>
+							<li>
+								<label>Arrival Date:</label>
+								<input type="date" id="arrival_date" name="arrival_date" />
+							</li>
+							<li>
+								<label>Nights:</label>
+								<input type="number" id="nights" name="nights" min="1" />
+							</li>
+							<li>
+								<label>*Comments:</label>
+								<textarea id="comments" name="comments" rows="2" cols="25" required="required"></textarea>
+							</li>
+							<button id="test">Submit</button>
+							<!-- <input type="submit" /> -->
+						</ul>
+					</fieldset>
+				</form>
+
+				<div role="complementary" id="contact">
+					<p><span class="resort">Atlantic Trails Resort</span><br>
+					1210 Atlantic Trails Way<br>
+					Cliffside, Maine 04226</p>
+					<p><a href="tel:888-555-5555" id="phone-number">888-555-5555</a></p>
+				</div>
+				
+			</article>
+		</main>
+		
+		<footer role="contentinfo">
+			<p>Copyright &copy; 2017 Atlantic Trails Resort<br>
+			<a href="#">jason@figueroa.com</a></p>
+		</footer>
+	</div>
+</body>	
+</html>
