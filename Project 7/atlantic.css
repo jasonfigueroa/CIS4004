@@ -4,6 +4,10 @@
 	font-size: 50%;
 }
 
+/*.highlight-table-row {
+	background-color: pink;
+}*/
+
 .resort {
 	color: #5C7FA3;
 	font-weight: bold;
@@ -226,8 +230,12 @@ td:nth-child(2) {
     text-align: left;
 }
 
-tr:nth-child(odd) {
+/*tr:nth-child(odd) {
     background-color: #E5E5E5;
+}*/
+
+.odd-row {
+	background-color: #E5E5E5;
 }
 
 td a:link{
@@ -236,6 +244,12 @@ td a:link{
 
 td a:hover {
     color: #000033;
+}
+
+.highlight-table-row {
+	/*background-color: pink;*/
+	background-color: #FFFF99;
+	color: #000066;
 }
 
 a:link {
